@@ -14,14 +14,18 @@ function createWindow(): void{
     if(process.env.VITE_DEV_SERVER_URL) {
         win.loadURL(process.env.VITE_DEV_SERVER_URL)
     } else {
-        win.loadFile(path.join(__dirname,'./index.html'));
+        win.loadFile(path.join(__dirname,'../build/index.html'));
     }
     
+    win.webContents.openDevTools();
 }
+
+
 
 app.whenReady().then(() => {
     createWindow();
 })
+
 
 
 app.on('window-all-closed', () => {

@@ -1,7 +1,7 @@
 {
-  "name": "ts-vite-electron",
+  "name": "ts-react-vite-electron",
   "author": "aldrick",
-  "description": "An app to schedule when auto shutdown your computer.",
+  "description": "My boilerplate to build electron with Vite + TS + Electron-builder and react",
   "private": true,
   "version": "0.0.0",
   "main": "dist-electron/main.js",
